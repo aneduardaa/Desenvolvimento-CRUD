@@ -1,9 +1,0 @@
-import java.sql.*;
-public class ConexaoBanco {
-        private static final String URL = "";
-        private static final String USUARIO = "";
-        private static final String SENHA = "";
-        public static Connection obterConexao() throws SQLException{
-            return DriverManager.getConnection(URL, USUARIO, SENHA);
-        }
-    }
