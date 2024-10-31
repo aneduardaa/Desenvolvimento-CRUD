@@ -1,9 +1,16 @@
+// Codigo comentado por Ana Eduarda.
+//importacao da biblioteca para trabalhar com a conexao com o banco de dados.
+
 import java.sql.*;
+
+// classe que contem os metodos e variaveis
 public class ConexaoBanco {
-        private static final String URL = "";
-        private static final String USUARIO = "";
-        private static final String SENHA = "";
-        public static Connection obterConexao() throws SQLException{
-            return DriverManager.getConnection(URL, USUARIO, SENHA);
-        }
+    private static final String URL = "";
+    private static final String USUARIO = "";
+    private static final String SENHA = "";
+
+//declaracao das tres constantes (URL, USUARIO, SENHA), metiodo para obter a conexao com o banco de dados.
+    public static Connection obterConexao() throws SQLException {
+        return DriverManager.getConnection(URL, USUARIO, SENHA);
     }
+}
